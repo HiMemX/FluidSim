@@ -263,13 +263,6 @@ namespace FluidSim
             glControl.SwapBuffers();
             glControl.Invalidate();
 
-
-            // --- Your normal simulation code here ---
-            // ComputeShaderStep(deltaTime);
-            // Draw();
-
-
-            // --- Framerate limiter (optional) ---
             double frameTime = stopwatch.Elapsed.TotalSeconds;
             fpsLabel.Text = (1 / (float)deltaTime).ToString();
             if (frameTime < targetFrameTime)
